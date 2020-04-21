@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B37A649244ECAE700089099 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B37A648244ECAE700089099 /* WebService.swift */; };
 		7B599DF4244DFB510082BF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599DF3244DFB510082BF59 /* AppDelegate.swift */; };
 		7B599DF6244DFB510082BF59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599DF5244DFB510082BF59 /* SceneDelegate.swift */; };
-		7B599DF8244DFB510082BF59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599DF7244DFB510082BF59 /* ViewController.swift */; };
 		7B599DFB244DFB510082BF59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B599DF9244DFB510082BF59 /* Main.storyboard */; };
 		7B599DFD244DFB540082BF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B599DFC244DFB540082BF59 /* Assets.xcassets */; };
 		7B599E00244DFB540082BF59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B599DFE244DFB540082BF59 /* LaunchScreen.storyboard */; };
+		7B599E09244E05170082BF59 /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599E08244E05170082BF59 /* WeatherListTableViewController.swift */; };
+		7B599E0B244E05560082BF59 /* AddWeatherCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599E0A244E05560082BF59 /* AddWeatherCityViewController.swift */; };
+		7B599E0E244E1AC20082BF59 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599E0D244E1AC20082BF59 /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B37A648244ECAE700089099 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		7B599DF0244DFB510082BF59 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B599DF3244DFB510082BF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B599DF5244DFB510082BF59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B599DF7244DFB510082BF59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B599DFA244DFB510082BF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B599DFC244DFB540082BF59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B599DFF244DFB540082BF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B599E01244DFB540082BF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B599E08244E05170082BF59 /* WeatherListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewController.swift; sourceTree = "<group>"; };
+		7B599E0A244E05560082BF59 /* AddWeatherCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherCityViewController.swift; sourceTree = "<group>"; };
+		7B599E0D244E1AC20082BF59 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B37A647244ECAD300089099 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B37A648244ECAE700089099 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		7B599DE7244DFB510082BF59 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +70,34 @@
 		7B599DF2244DFB510082BF59 /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
+				7B37A647244ECAD300089099 /* Services */,
+				7B599E0C244E1AA30082BF59 /* Custom Cells */,
+				7B599E07244E04FF0082BF59 /* Controllers */,
 				7B599DF3244DFB510082BF59 /* AppDelegate.swift */,
 				7B599DF5244DFB510082BF59 /* SceneDelegate.swift */,
-				7B599DF7244DFB510082BF59 /* ViewController.swift */,
 				7B599DF9244DFB510082BF59 /* Main.storyboard */,
 				7B599DFC244DFB540082BF59 /* Assets.xcassets */,
 				7B599DFE244DFB540082BF59 /* LaunchScreen.storyboard */,
 				7B599E01244DFB540082BF59 /* Info.plist */,
 			);
 			path = GoodWeather;
+			sourceTree = "<group>";
+		};
+		7B599E07244E04FF0082BF59 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B599E08244E05170082BF59 /* WeatherListTableViewController.swift */,
+				7B599E0A244E05560082BF59 /* AddWeatherCityViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7B599E0C244E1AA30082BF59 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7B599E0D244E1AC20082BF59 /* WeatherCell.swift */,
+			);
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B599DF8244DFB510082BF59 /* ViewController.swift in Sources */,
+				7B37A649244ECAE700089099 /* WebService.swift in Sources */,
+				7B599E09244E05170082BF59 /* WeatherListTableViewController.swift in Sources */,
 				7B599DF4244DFB510082BF59 /* AppDelegate.swift in Sources */,
+				7B599E0E244E1AC20082BF59 /* WeatherCell.swift in Sources */,
+				7B599E0B244E05560082BF59 /* AddWeatherCityViewController.swift in Sources */,
 				7B599DF6244DFB510082BF59 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
