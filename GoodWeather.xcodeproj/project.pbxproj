@@ -16,6 +16,13 @@
 		7B599E09244E05170082BF59 /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599E08244E05170082BF59 /* WeatherListTableViewController.swift */; };
 		7B599E0B244E05560082BF59 /* AddWeatherCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599E0A244E05560082BF59 /* AddWeatherCityViewController.swift */; };
 		7B599E0E244E1AC20082BF59 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599E0D244E1AC20082BF59 /* WeatherCell.swift */; };
+		7B6D3273244EF11500B82856 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D3272244EF11500B82856 /* WeatherListViewModel.swift */; };
+		7B6D3276244F0EAF00B82856 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D3275244F0EAF00B82856 /* Double+Extension.swift */; };
+		7B6D327B244F104300B82856 /* 740-gear-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6D3278244F104200B82856 /* 740-gear-toolbar@2x.png */; };
+		7B6D327C244F104300B82856 /* 740-gear-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6D3279244F104200B82856 /* 740-gear-toolbar@3x.png */; };
+		7B6D327D244F104300B82856 /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6D327A244F104200B82856 /* 740-gear-toolbar.png */; };
+		7B6D327F244F170500B82856 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D327E244F170500B82856 /* SettingsTableViewController.swift */; };
+		7B6D3281244F19D800B82856 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D3280244F19D800B82856 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,13 @@
 		7B599E08244E05170082BF59 /* WeatherListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewController.swift; sourceTree = "<group>"; };
 		7B599E0A244E05560082BF59 /* AddWeatherCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherCityViewController.swift; sourceTree = "<group>"; };
 		7B599E0D244E1AC20082BF59 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		7B6D3272244EF11500B82856 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
+		7B6D3275244F0EAF00B82856 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		7B6D3278244F104200B82856 /* 740-gear-toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar@2x.png"; path = "../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar@2x.png"; sourceTree = "<group>"; };
+		7B6D3279244F104200B82856 /* 740-gear-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar@3x.png"; path = "../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar@3x.png"; sourceTree = "<group>"; };
+		7B6D327A244F104200B82856 /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar.png"; path = "../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar.png"; sourceTree = "<group>"; };
+		7B6D327E244F170500B82856 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		7B6D3280244F19D800B82856 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,9 @@
 		7B599DF2244DFB510082BF59 /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
+				7B6D3277244F101F00B82856 /* Images */,
+				7B6D3274244F0E8E00B82856 /* Extensions */,
+				7B6D3271244EF0F500B82856 /* ViewModels */,
 				7B37A647244ECAD300089099 /* Services */,
 				7B599E0C244E1AA30082BF59 /* Custom Cells */,
 				7B599E07244E04FF0082BF59 /* Controllers */,
@@ -88,6 +105,7 @@
 			children = (
 				7B599E08244E05170082BF59 /* WeatherListTableViewController.swift */,
 				7B599E0A244E05560082BF59 /* AddWeatherCityViewController.swift */,
+				7B6D327E244F170500B82856 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -98,6 +116,33 @@
 				7B599E0D244E1AC20082BF59 /* WeatherCell.swift */,
 			);
 			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		7B6D3271244EF0F500B82856 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B6D3272244EF11500B82856 /* WeatherListViewModel.swift */,
+				7B6D3280244F19D800B82856 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7B6D3274244F0E8E00B82856 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B6D3275244F0EAF00B82856 /* Double+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B6D3277244F101F00B82856 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7B6D327A244F104200B82856 /* 740-gear-toolbar.png */,
+				7B6D3278244F104200B82856 /* 740-gear-toolbar@2x.png */,
+				7B6D3279244F104200B82856 /* 740-gear-toolbar@3x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +205,10 @@
 			files = (
 				7B599E00244DFB540082BF59 /* LaunchScreen.storyboard in Resources */,
 				7B599DFD244DFB540082BF59 /* Assets.xcassets in Resources */,
+				7B6D327D244F104300B82856 /* 740-gear-toolbar.png in Resources */,
 				7B599DFB244DFB510082BF59 /* Main.storyboard in Resources */,
+				7B6D327B244F104300B82856 /* 740-gear-toolbar@2x.png in Resources */,
+				7B6D327C244F104300B82856 /* 740-gear-toolbar@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,9 +222,13 @@
 				7B37A649244ECAE700089099 /* WebService.swift in Sources */,
 				7B599E09244E05170082BF59 /* WeatherListTableViewController.swift in Sources */,
 				7B599DF4244DFB510082BF59 /* AppDelegate.swift in Sources */,
+				7B6D3273244EF11500B82856 /* WeatherListViewModel.swift in Sources */,
+				7B6D3276244F0EAF00B82856 /* Double+Extension.swift in Sources */,
+				7B6D3281244F19D800B82856 /* SettingsViewModel.swift in Sources */,
 				7B599E0E244E1AC20082BF59 /* WeatherCell.swift in Sources */,
 				7B599E0B244E05560082BF59 /* AddWeatherCityViewController.swift in Sources */,
 				7B599DF6244DFB510082BF59 /* SceneDelegate.swift in Sources */,
+				7B6D327F244F170500B82856 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z77AJ2H7ZG;
 				INFOPLIST_FILE = GoodWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.serhan.GoodWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -341,6 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z77AJ2H7ZG;
 				INFOPLIST_FILE = GoodWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.serhan.GoodWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
