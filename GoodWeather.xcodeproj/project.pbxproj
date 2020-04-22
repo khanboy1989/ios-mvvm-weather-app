@@ -21,11 +21,11 @@
 		7B599E0E244E1AC20082BF59 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B599E0D244E1AC20082BF59 /* WeatherCell.swift */; };
 		7B6D3273244EF11500B82856 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D3272244EF11500B82856 /* WeatherListViewModel.swift */; };
 		7B6D3276244F0EAF00B82856 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D3275244F0EAF00B82856 /* Double+Extension.swift */; };
-		7B6D327B244F104300B82856 /* 740-gear-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6D3278244F104200B82856 /* 740-gear-toolbar@2x.png */; };
-		7B6D327C244F104300B82856 /* 740-gear-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6D3279244F104200B82856 /* 740-gear-toolbar@3x.png */; };
-		7B6D327D244F104300B82856 /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6D327A244F104200B82856 /* 740-gear-toolbar.png */; };
 		7B6D327F244F170500B82856 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D327E244F170500B82856 /* SettingsTableViewController.swift */; };
 		7B6D3281244F19D800B82856 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D3280244F19D800B82856 /* SettingsViewModel.swift */; };
+		7B8BB5E8245093F20089D9BE /* 740-gear-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B8BB5E5245093F20089D9BE /* 740-gear-toolbar@3x.png */; };
+		7B8BB5E9245093F20089D9BE /* 740-gear-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B8BB5E6245093F20089D9BE /* 740-gear-toolbar@2x.png */; };
+		7B8BB5EA245093F20089D9BE /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B8BB5E7245093F20089D9BE /* 740-gear-toolbar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,11 +45,11 @@
 		7B599E0D244E1AC20082BF59 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		7B6D3272244EF11500B82856 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		7B6D3275244F0EAF00B82856 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
-		7B6D3278244F104200B82856 /* 740-gear-toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar@2x.png"; path = "../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar@2x.png"; sourceTree = "<group>"; };
-		7B6D3279244F104200B82856 /* 740-gear-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar@3x.png"; path = "../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar@3x.png"; sourceTree = "<group>"; };
-		7B6D327A244F104200B82856 /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar.png"; path = "../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar.png"; sourceTree = "<group>"; };
 		7B6D327E244F170500B82856 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		7B6D3280244F19D800B82856 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		7B8BB5E5245093F20089D9BE /* 740-gear-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar@3x.png"; sourceTree = "<group>"; };
+		7B8BB5E6245093F20089D9BE /* 740-gear-toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar@2x.png"; sourceTree = "<group>"; };
+		7B8BB5E7245093F20089D9BE /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,9 +155,9 @@
 		7B6D3277244F101F00B82856 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				7B6D327A244F104200B82856 /* 740-gear-toolbar.png */,
-				7B6D3278244F104200B82856 /* 740-gear-toolbar@2x.png */,
-				7B6D3279244F104200B82856 /* 740-gear-toolbar@3x.png */,
+				7B8BB5E7245093F20089D9BE /* 740-gear-toolbar.png */,
+				7B8BB5E6245093F20089D9BE /* 740-gear-toolbar@2x.png */,
+				7B8BB5E5245093F20089D9BE /* 740-gear-toolbar@3x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -220,12 +220,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8BB5E8245093F20089D9BE /* 740-gear-toolbar@3x.png in Resources */,
+				7B8BB5E9245093F20089D9BE /* 740-gear-toolbar@2x.png in Resources */,
+				7B8BB5EA245093F20089D9BE /* 740-gear-toolbar.png in Resources */,
 				7B599E00244DFB540082BF59 /* LaunchScreen.storyboard in Resources */,
 				7B599DFD244DFB540082BF59 /* Assets.xcassets in Resources */,
-				7B6D327D244F104300B82856 /* 740-gear-toolbar.png in Resources */,
 				7B599DFB244DFB510082BF59 /* Main.storyboard in Resources */,
-				7B6D327B244F104300B82856 /* 740-gear-toolbar@2x.png in Resources */,
-				7B6D327C244F104300B82856 /* 740-gear-toolbar@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

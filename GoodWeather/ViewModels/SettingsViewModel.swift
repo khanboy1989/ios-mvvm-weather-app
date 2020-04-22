@@ -32,7 +32,7 @@ extension Unit {
 struct SettingsViewModel {
     let units = Unit.allCases
    
-    private var _selectedUnit: Unit = Unit.fahrenheit
+    private var _selectedUnit: Unit = Unit.celsius
     
     var selectedUnit:Unit{
         get {

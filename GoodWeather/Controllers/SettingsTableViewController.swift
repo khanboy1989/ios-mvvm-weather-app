@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 protocol SettingsDelegate {
-    func settingsDone(vm:SettingsViewModel)
+    func settingsDone(vm:SettingsViewModel,shouldUpdateUnit:Bool)
 }
 
 class SettingsTableViewController:UITableViewController{
     
     private var settingsVM = SettingsViewModel()
-    
+    private var shouldUpdateUnit:Bool = false
     var delegate:SettingsDelegate?
     
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class SettingsTableViewController:UITableViewController{
     
     @IBAction func doneButtonTapped(){
         if let delegate = self.delegate {
-            delegate.settingsDone(vm: self.settingsVM)
+            delegate.settingsDone(vm: self.settingsVM, shouldUpdateUnit:self.shouldUpdateUnit)
         }
         self.dismiss(animated: true, completion: nil)
     }
@@ -39,7 +39,12 @@ class SettingsTableViewController:UITableViewController{
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .checkmark
             let unit = Unit.allCases[indexPath.row]
-            self.settingsVM.selectedUnit = unit
+            if unit != self.settingsVM.selectedUnit {
+                self.shouldUpdateUnit = true
+                self.settingsVM.selectedUnit = unit
+            }else {
+                self.shouldUpdateUnit = false 
+            }
         }
     }
     
