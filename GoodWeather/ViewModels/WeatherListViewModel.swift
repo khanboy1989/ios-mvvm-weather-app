@@ -29,6 +29,11 @@ struct WeatherListViewModel {
         weathersViewModel =  weathersViewModel.map{ vm in
             let weatherModel = vm
             weatherModel.currentTemperature.temperature.value = (weatherModel.currentTemperature.temperature.value - 32) * 5/9
+            
+            weatherModel.currentTemperature.temperatureMax.value = (weatherModel.currentTemperature.temperatureMax.value - 32) * 5/9
+            
+            weatherModel.currentTemperature.temperatureMin.value = (weatherModel.currentTemperature.temperatureMin.value - 32) * 5/9
+            
             return weatherModel
         }
     }
@@ -37,6 +42,11 @@ struct WeatherListViewModel {
         weathersViewModel =  weathersViewModel.map{ vm in
             let weatherModel = vm
             weatherModel.currentTemperature.temperature.value = (weatherModel.currentTemperature.temperature.value * 9/5) + 32
+            
+            weatherModel.currentTemperature.temperatureMax.value = (weatherModel.currentTemperature.temperatureMax.value * 9/5) + 32
+            
+            weatherModel.currentTemperature.temperatureMin.value = (weatherModel.currentTemperature.temperatureMin.value * 9/5) + 32
+            
             return weatherModel
         }
     }
