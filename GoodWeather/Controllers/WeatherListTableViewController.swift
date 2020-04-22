@@ -25,6 +25,8 @@ class WeatherListTableViewController:UITableViewController,AddWeatherDelegate{
             self.prepareSegueForAddWeatherCityViewController(segue: segue)
         }else if segue.identifier == "SettingsTableViewController" {
             self.prepareSegueForSettingsTableViewController(segue: segue)
+        }else if segue.identifier == "WeatherDetailsViewController" {
+            self.prepareSegueForWeatherDetailsViewController(segue:segue)
         }else {
             print("segue could not be found with identifier given:\(String(describing: segue.identifier))")
         }
@@ -49,6 +51,16 @@ class WeatherListTableViewController:UITableViewController,AddWeatherDelegate{
             fatalError("SettingsViewControoler not foubd")
         }
         settingsViewController.delegate = self
+    }
+    
+    private func prepareSegueForWeatherDetailsViewController(segue:UIStoryboardSegue){
+        guard let weatherDetailVC = segue.destination as? WeatherDetailsViewController , let indexPath = self.tableView.indexPathForSelectedRow else {
+            return
+        }
+        
+        let weatherVM = self.weatherListViewModel.modelAt(indexPath.row)
+        weatherDetailVC.weatherViewModel = weatherVM
+        
     }
     
     func addWeatherDidSave(vm: WeatherViewModel) {

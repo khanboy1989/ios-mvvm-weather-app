@@ -82,6 +82,7 @@
                                 <connections>
                                     <outlet property="cityNameLabel" destination="SVc-az-0xG" id="6h0-rf-kPS"/>
                                     <outlet property="temperatureLabel" destination="AhX-Tn-Nna" id="OSZ-Eg-a4a"/>
+                                    <segue destination="RXq-Ao-JbE" kind="show" identifier="WeatherDetailsViewController" id="XCJ-Ig-TPm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -178,6 +179,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TlN-rg-pdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2943.4782608695655" y="88.392857142857139"/>
+        </scene>
+        <!--Weather Details View Controller-->
+        <scene sceneID="Gac-Wv-bgp">
+            <objects>
+                <viewController id="RXq-Ao-JbE" customClass="WeatherDetailsViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ulg-aF-Kyt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de0-7j-Z27">
+                                <rect key="frame" x="186" y="123" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcN-yj-PKH">
+                                <rect key="frame" x="186" y="152" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnL-Yf-S71">
+                                <rect key="frame" x="186" y="181" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsG-tm-bck">
+                                <rect key="frame" x="186" y="210" width="42" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XcN-yj-PKH" firstAttribute="top" secondItem="de0-7j-Z27" secondAttribute="bottom" constant="8" id="MDJ-Oi-o3k"/>
+                            <constraint firstItem="de0-7j-Z27" firstAttribute="centerX" secondItem="gt7-xe-fQv" secondAttribute="centerX" id="NFf-Qx-7dR"/>
+                            <constraint firstItem="ZnL-Yf-S71" firstAttribute="top" secondItem="XcN-yj-PKH" secondAttribute="bottom" constant="8" id="Vlu-id-x4q"/>
+                            <constraint firstItem="xsG-tm-bck" firstAttribute="centerX" secondItem="ZnL-Yf-S71" secondAttribute="centerX" id="Xb9-qY-emO"/>
+                            <constraint firstItem="ZnL-Yf-S71" firstAttribute="centerX" secondItem="XcN-yj-PKH" secondAttribute="centerX" id="iSD-D9-wcm"/>
+                            <constraint firstItem="XcN-yj-PKH" firstAttribute="centerX" secondItem="de0-7j-Z27" secondAttribute="centerX" id="qyB-PM-kbX"/>
+                            <constraint firstItem="xsG-tm-bck" firstAttribute="top" secondItem="ZnL-Yf-S71" secondAttribute="bottom" constant="8" id="uEP-eS-p9p"/>
+                            <constraint firstItem="de0-7j-Z27" firstAttribute="top" secondItem="gt7-xe-fQv" secondAttribute="top" constant="35" id="vIF-l1-K4Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gt7-xe-fQv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bX2-4M-dRJ"/>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="de0-7j-Z27" id="RN4-J5-zCD"/>
+                        <outlet property="currentTempLabel" destination="XcN-yj-PKH" id="ITg-Gp-BXV"/>
+                        <outlet property="maxTempLabel" destination="ZnL-Yf-S71" id="074-1V-c6Q"/>
+                        <outlet property="minTempLabel" destination="xsG-tm-bck" id="kay-Yc-XoS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVi-V6-okn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="739.95535714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iTS-Nm-FTE">

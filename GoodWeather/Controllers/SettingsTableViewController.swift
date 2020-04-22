@@ -48,7 +48,6 @@ class SettingsTableViewController:UITableViewController{
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .none
         }
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -72,7 +71,4 @@ class SettingsTableViewController:UITableViewController{
         
         return cell
     }
-    
-    
-    
 }
