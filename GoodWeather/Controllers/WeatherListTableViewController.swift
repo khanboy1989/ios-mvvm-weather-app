@@ -12,10 +12,7 @@ import UIKit
 
 class WeatherListTableViewController:UITableViewController,AddWeatherDelegate{
     
-    
-    
     private var weatherListViewModel = WeatherListViewModel()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
